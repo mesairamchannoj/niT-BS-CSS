@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: radial-gradient(white, lightblue);
+        }
+
+        table thead tr {
+            background-color: lightgreen;
+        }
+
+        #studentsec {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+
+        #social {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        footer {
+            background-color: rgb(176, 163, 105);
+        }
+
+        #details {
+            background-color: slategray;
+        }
+
+        h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 4px gray;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <h2 align="center">Naresh Technologies</h2>
+    </header>
+    <section>
+        <div class="btn btn-toolbar bg-dark justify-content-between p-2">
+            <div>
+                <button class="btn btn-outline-light"><span class="bi bi-house-fill"></span> <a
+                        href="index.html">Home</a></button>
+                <button class="btn btn-outline-light"><span class="bi bi-info-circle-fill"></span> <a
+                        href="about.html">About</a></button>
+                <button class="btn btn-outline-light"><span class="bi bi-person-fill"></span> <a
+                        href="services.html">Services</a></button>
+                <button class="btn btn-outline-light"><span class="bi bi-phone-fill"></span> <a
+                        href="contacts.html">Contact Us</a></button>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <button class="dropdown-toggle btn btn-danger" data-bs-target="#items" data-bs-toggle="dropdown">
+                        <span class="bi bi-person-fill"></span> User Login
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-dark collapse" id="items">
+                        <div class="dropdown-item">
+                            <a href="login.html"><span class="dropdown-item-text">Login</span></a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="register.html"><span class="dropdown-item-text">Register</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 id="details" class="text-light text-center mt-2 p-2 ">Course Details</h4>
+        <div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Faculty Name</th>
+                        <th>Duration</th>
+                        <th>Timing</th>
+                        <th>More</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Angular 13</b></td>
+                        <td>Sudhakar Sharma</td>
+                        <td>45 Days</td>
+                        <td>7:00 AM</td>
+                        <td><button class="btn btn-info" data-bs-target="#Angular" data-bs-toggle="modal">View <span
+                                    class="bi bi-eye-fill"></span></button></td>
+                    </tr>
+                    <tr>
+                        <td><b>JAVA</b></td>
+                        <td>Hari Krishna</td>
+                        <td>6 Months</td>
+                        <td>10:00 AM</td>
+                        <td><button class="btn btn-info" data-bs-target="#Java" data-bs-toggle="modal">View <span
+                                    class="bi bi-eye-fill"></span></button></td>
+                    </tr>
+                    <tr>
+                        <td><b>Node.js</b></td>
+                        <td>Samba</td>
+                        <td>45 Days</td>
+                        <td>9:00 AM</td>
+                        <td><button class="btn btn-info" data-bs-target="#Node" data-bs-toggle="modal">View <span
+                                    class="bi bi-eye-fill"></span></button></td>
+                    </tr>
+                    <tr>
+                        <td><b>Full Stack UI</b></td>
+                        <td>Durga Prasad</td>
+                        <td>4 Months</td>
+                        <td>6:00 PM</td>
+                        <td><button class="btn btn-info" data-bs-target="#Ui" data-bs-toggle="modal">View <span
+                                    class="bi bi-eye-fill"></span></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <div class="modal fade" id="Angular">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Naresh iT</h3>
+                            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Course Name</th>
+                                        <th>Fees</th>
+                                        <th>Content</th>
+                                        <th>New Batches From</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Angular 13</td>
+                                        <td>5000/-</td>
+                                        <td>TypeScript, Framework, Library, etc</td>
+                                        <td>12/06/2023</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-info" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Java">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Naresh iT</h3>
+                            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Course Name</th>
+                                        <th>Fees</th>
+                                        <th>Content</th>
+                                        <th>New Batches From</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Java Full Stack</td>
+                                        <td>12,000/-</td>
+                                        <td>Frontend, Backend, Database</td>
+                                        <td>1/07/2023</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-info" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Node">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Naresh iT</h3>
+                            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Course Name</th>
+                                        <th>Fees</th>
+                                        <th>Content</th>
+                                        <th>New Batches From</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Node.js</td>
+                                        <td>2000/-</td>
+                                        <td>Express.js, Interaction with Datebases, etc</td>
+                                        <td>19/06/2023</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-info" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Ui">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Naresh iT</h3>
+                            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Course Name</th>
+                                        <th>Fees</th>
+                                        <th>Content</th>
+                                        <th>New Batches From</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Full Stack Web Development</td>
+                                        <td>5000/-</td>
+                                        <td>Frontend, Backend, Database.</td>
+                                        <td>24/02/2023</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-info" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="about" class="text-justify mb-4">
+            <b>About Software Trainers Profile</b> <br> <br>
+            <i>The quality and also usefulness connected with any kind of exercise program depends upon the actual
+                Software Trainers. Naresh IT Software Trainers are professionals, that are experienced and have
+                real-world connection with the approval advancement. The actual interactive session carried out
+                throughout the Course assists student for you to clear the style and also find out more rapidly. <br>
+                <br>
+                Having rich practical knowledge with technologies asking, providing alternatives for sophisticated and
+                also varied difficulties for you to business, all our own software trainers are knowledgeable and also
+                conversant regarding the newest scientific progress within their field of expertise, that eventually
+                enables them to share technologies beyond study course articles and also guide the actual students with
+                entire understanding of purposes.</i>
+        </div>
+    </section>
+    <footer class="p-4 ">
+        <div align="center">
+            <h4>Student Department Details</h4>
+            <div id="studentsec">
+                <div>
+                    <h1><span class="bi bi-cash-coin"></span></h1>
+                    <b>Average Salary Offered 7LPA</b>
+                </div>
+                <div>
+                    <h1><span class="bi bi-hourglass"></span></h1>
+                    <b>Min 6 Months Training Duration</b>
+                </div>
+                <div>
+                    <h1><span class="bi bi-mortarboard-fill"></span></h1>
+                    <b>Affiliated by IIT, Kanpur</b>
+                </div>
+            </div>
+        </div>
+        <h3 class="bg-dark p-1 mt-2" style="color: white; text-align: center; border-radius: 5px;">Connect us On </h3>
+        <div id="social">
+            <span class="bi bi-google"> <a href="https://nareshit.in/">Google</a></span>
+            <span class="bi bi-youtube"> <a href="https://www.youtube.com/c/NareshIT">YouTube</a></span>
+            <span class="bi bi-facebook"> <a href="https://www.facebook.com/nareshit">Facebook</a></span>
+            <span class="bi bi-twitter"> <a href="https://twitter.com/nareshitech">Twitter</a></span>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

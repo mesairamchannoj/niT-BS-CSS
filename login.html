@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: radial-gradient(white, lightblue);
+        }
+
+        #studentsec {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+
+        #social {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+        }
+
+        footer {
+            background-color: rgb(176, 163, 105);
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        #main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+        }
+
+        #box {
+            border: 1px solid black;
+            box-shadow: 4px 4px 8px gray;
+            width: 500px;
+            height: 300px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 4px gray;
+        }
+
+        #loginpic {
+            margin-left: 100px;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <h2 align="center">Naresh Technologies</h2>
+    </header>
+    <section>
+        <div class="btn btn-toolbar bg-dark justify-content-between p-2">
+            <div>
+                <button class="btn btn-outline-light"><span class="bi bi-house-fill"></span> <a
+                        href="index.html">Home</a></button>
+                <button class="btn btn-outline-light"><span class="bi bi-info-circle-fill"></span> <a
+                        href="about.html">About</a></button>
+                <button class="btn btn-outline-light"><span class="bi bi-person-fill"></span> <a
+                        href="services.html">Services</a></button>
+                <button class="btn btn-outline-light"><span class="bi bi-phone-fill"></span> <a
+                        href="contacts.html">Contact Us</a></button>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <button class="dropdown-toggle btn btn-danger" data-bs-target="#items" data-bs-toggle="dropdown">
+                        <span class="bi bi-person-fill"></span> User Login
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-dark collapse" id="items">
+                        <div class="dropdown-item">
+                            <a href="login.html"><span class="dropdown-item-text">Login</span></a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="register.html"><span class="dropdown-item-text">Register</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="box">
+                <h2>Log In</h2>
+                <div class="input-group">
+                    <span class="bi bi-person-fill input-group-text"></span>
+                    <input type="email" autofocus class="form-control" placeholder="Enter your Mail-id">
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="bi bi-key-fill input-group-text"></span>
+                    <input type="password" class="form-control" placeholder="Enter Password">
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mb-2 w-50 mt-4">Login <span
+                            class="bi bi-chevron-double-right"></span></button>
+                    <br>
+                    <a href="./password.html">Forgot Password ?</a><br>
+                    New User ? <a href="./register.html">Register Here</a>
+                </div>
+            </div>
+            <div id="loginpic">
+                <img src="./images/login.png"crossorigin="anonymous" width="250" height="250" alt="">
+            </div>
+        </div>
+    </section>
+    <footer class="p-4 ">
+        <div align="center">
+            <h4>Student Department Details</h4>
+            <div id="studentsec">
+                <div>
+                    <h1><span class="bi bi-cash-coin"></span></h1>
+                    <b>Average Salary Offered 7LPA</b>
+                </div>
+                <div>
+                    <h1><span class="bi bi-hourglass"></span></h1>
+                    <b>Min 6 Months Training Duration</b>
+                </div>
+                <div>
+                    <h1><span class="bi bi-mortarboard-fill"></span></h1>
+                    <b>Affiliated by IIT, Kanpur</b>
+                </div>
+            </div>
+        </div>
+        <h3 class="bg-dark p-1 mt-2" style="color: white; text-align: center; border-radius: 5px;">Connect us On </h3>
+        <div id="social">
+            <span class="bi bi-google"> <a href="https://nareshit.in/">Google</a></span>
+            <span class="bi bi-youtube"> <a href="https://www.youtube.com/c/NareshIT">YouTube</a></span>
+            <span class="bi bi-facebook"> <a href="https://www.facebook.com/nareshit">Facebook</a></span>
+            <span class="bi bi-twitter"> <a href="https://twitter.com/nareshitech">Twitter</a></span>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

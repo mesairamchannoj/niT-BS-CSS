@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: radial-gradient(white, lightblue);
+        }
+
+        #details {
+            background-color: slategray;
+        }
+
+        .card {
+            width: 300px;
+            height: 450px;
+            align-items: center;
+            background-color: antiquewhite;
+            margin-bottom: 30px;
+        }
+
+        #card {
+            columns: 3;
+            padding-left: 90px;
+        }
+
+        #studentsec {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+
+        #social {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+        }
+
+        footer {
+            background-color: rgb(176, 163, 105);
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 4px gray;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <h2 align="center">Naresh Technologies</h2>
+    </header>
+    <section>
+        <div class="btn btn-toolbar bg-dark justify-content-between p-2">
+            <div>
+                <button class="btn btn-outline-light"><span class="bi bi-house-fill"></span> <a
+                        href="index.html">Home</a></button>
+                <button class="btn btn-outline-light"><span class="bi bi-info-circle-fill"></span> <a
+                        href="about.html">About</a></button>
+                <button class="btn btn-outline-light"><span class="bi bi-person-fill"></span> <a
+                        href="services.html">Services</a></button>
+                <button class="btn btn-outline-light"><span class="bi bi-phone-fill"></span> <a
+                        href="contacts.html">Contact Us</a></button>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <button class="dropdown-toggle btn btn-danger" data-bs-target="#items" data-bs-toggle="dropdown">
+                        <span class="bi bi-person-fill"></span> User Login
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-dark collapse" id="items">
+                        <div class="dropdown-item">
+                            <a href="login.html"><span class="dropdown-item-text">Login</span></a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="register.html"><span class="dropdown-item-text">Register</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="text-center p-2 mt-2 text-white" id="details">Our Services</h4>
+        <div id="card">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-img-top"><img crossorigin="anonymous" src="./images/s1.jpg" width="200px" height="200px" alt=""></div>
+                </div>
+                <div class="card-body">
+                    <b><i>Web Design</i></b>
+                </div>
+                <div class="card-footer">
+                    <p>Web design refers to the design of websites that are displayed on the internet. It usually refers
+                        to the user experience aspects of website development rather than software development.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-img-top"><img crossorigin="anonymous" src="./images/s2.jpg" width="200px" height="200px" alt=""></div>
+                </div>
+                <div class="card-body">
+                    <b><i>IT Services</i></b>
+                </div>
+                <div class="card-footer">
+                    <p>We are ideally located in Larbert meaning we can offer IT support to businesses throughout
+                        Scotland. We take the hassle and worry out of your IT system by providing preventative and
+                        proactive IT support.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-img-top"><img crossorigin="anonymous" src="./images/s3.png" width="200px" height="200px" alt=""></div>
+                </div>
+                <div class="card-body">
+                    <b><i>Web Marketing</i></b>
+                </div>
+                <div class="card-footer">
+                    <p>We are passionate about digital content creation, strategy and delivery. We deliver results by
+                        designing marketing strategies which improve our clients brand visibility.</p>
+                </div>
+            </div>
+        </div>
+        <div id="services">
+            <i>Naresh i Technologies ( <font color="green">Pronounced as NareshIT</font> ) is a leading software
+                training institute providing Software
+                Training, Project Guidance, IT Consulting and Technology Workshops. <br> <br>
+
+                Using our enhanced global software training delivery methodology, innovative software training approach
+                and
+                industry expertise, we provide high-value corporate training services that enable our clients to enhance
+                business performance, accelerate time-to-market, increase productivity and improve customer service.
+                <br> <br>
+
+                We serve Global 100 companies and the leading software vendors in Banking & Financial Services,
+                Insurance,
+                Telecommunications, Technology and Media, Information & Education industries. We design and mentor human
+                resources for our clients who create competitive advantage. <br> <br>
+
+                Founded in 2004 and headquartered in Hyderabad, India, we have offices and training institutes
+                throughout
+                the India. <br> <br>
+
+                <ul>
+                    <li>Headquarters – Durga Bhavani Plaza, Ameerpet, Hyderabad.</li>
+                    <li>Offices – Hyderabad, Chennai.</li>
+                    <li>Training Institutes – Hyderabad, Chennai.</li>
+                </ul>
+            </i>
+        </div>
+    </section>
+    <footer class="p-4 ">
+        <div align="center">
+            <h4>Student Department Details</h4>
+            <div id="studentsec">
+                <div>
+                    <h1><span class="bi bi-cash-coin"></span></h1>
+                    <b>Average Salary Offered 7LPA</b>
+                </div>
+                <div>
+                    <h1><span class="bi bi-hourglass"></span></h1>
+                    <b>Min 6 Months Training Duration</b>
+                </div>
+                <div>
+                    <h1><span class="bi bi-mortarboard-fill"></span></h1>
+                    <b>Affiliated by IIT, Kanpur</b>
+                </div>
+            </div>
+        </div>
+        <h3 class="bg-dark p-1 mt-2" style="color: white; text-align: center; border-radius: 5px;">Connect us On </h3>
+        <div id="social">
+            <span class="bi bi-google"> <a href="https://nareshit.in/">Google</a></span>
+            <span class="bi bi-youtube"> <a href="https://www.youtube.com/c/NareshIT">YouTube</a></span>
+            <span class="bi bi-facebook"> <a href="https://www.facebook.com/nareshit">Facebook</a></span>
+            <span class="bi bi-twitter"> <a href="https://twitter.com/nareshitech">Twitter</a></span>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
